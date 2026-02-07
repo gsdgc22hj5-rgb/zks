@@ -1,4 +1,7 @@
-FROM registry.cn-hangzhou.aliyuncs.com/library/alpine:latest
+FROM alpine:latest
+
+WORKDIR /app
+COPY . /app
 WORKDIR /app
 COPY . /app
 EXPOSE 80
